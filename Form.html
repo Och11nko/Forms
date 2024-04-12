@@ -1,0 +1,67 @@
+<html>
+<head>
+    <style>
+        body {background-color: rgb(0, 0, 0);}
+        
+        label {color: aquamarine;}
+        h1 {color: rgb(211, 224, 176); text-align: center;}
+        input {color: black; background-color: dodgerblue; border-color:blueviolet; width: 250px}
+        form { width: 400px; text-align: center; margin-left: 500px;}
+        nav {background-color: rgb(123, 179, 169);} 
+        p{
+            color: beige;
+        }
+        marquee{
+            color: rgb(211, 211, 199);
+        }
+        </style>
+    </head>
+
+    <body background="Bg.jpg">
+        <nav>
+        <p>
+            ICT PT 1 Q4 by Ace Jaden Domingo and Ehren Timothy Cruz of 8-Pearl
+        </p>
+        </nav>
+        <marquee scrollamount="15" bg-color="blue"><b>ACE JADEN A. DOMINGO & EHREN TIMOTHY T. CRUZ 8-PEARL </b></marquee>
+        <h1> Please answer this survey we have given for YOU </h1> <br>
+
+            <form>
+
+                <label for="gg"> What is your full name? </label> <br>
+                <input type="text" name="gg" id="gg"> <br> <br>
+
+                <label for="gh"> What is your age? </label> <br>
+                <input type="text" name="gh" id="gh"> <br> <br>
+
+                <label for="gf"> When is your Birthday? </label> <br>
+                <input type="text" name="gf" id="gf"> <br> <br>
+
+                <label for="gv"> What is your dream Job? </label> <br>
+                <input type="text" name="gv" id="gv"> <br> <br>
+
+                <label for="gt"> What motto in life can you really believe in? </label> <br>
+                <input type="text" name="gt" id="gt"> <br> <br>
+                <input type="submit" onclick="test ()">
+
+            </form>
+    </body>
+    <script>
+
+        function test () {
+            var gg=document.getElementById("gg").value;
+            var gh=document.getElementById("gh").value;
+            var gf=document.getElementById("gf").value;
+            var gv=document.getElementById("gv").value;
+            var gt=document.getElementById("gt").value;
+
+            localStorage.setItem("gg", gg);
+            localStorage.setItem("gh", gh);
+            var gf=localStorage.setItem("gf", gf);
+            var gv=localStorage.setItem("gv", gv);
+            var gt=localStorage.setItem("gt", gt);
+
+        }
+
+        </script>
+</html>
